@@ -4,28 +4,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SideBar from './components/SideBar';
 import { Route, Switch } from 'react-router';
 
+import { FaHome } from 'react-icons/fa';
+import { FcAbout } from 'react-icons/fc';
+
 function App() {
 
 	let menuItems = [
 		{
 			id: 1,
 			title: 'Home',
-			icon: 'Home'
+			icon: <FaHome />,
+			url: '/home'
 		},
 		{
 			id: 2,
 			title: 'About',
-			icon: 'Home'
+			icon: <FcAbout />,
+			url: '/home'
 		},
 		{
 			id: 3,
 			title: 'Portfolio',
-			icon: 'Home'
+			icon: 'Home',
+			url: '/home'
 		},
 		{
 			id: 4,
 			title: 'Projects',
-			icon: 'Home'
+			icon: 'Home',
+			url: '/home'
 		}
 	]
   return (
@@ -35,7 +42,13 @@ function App() {
 			<Col xs="1" className="border text-center d-none">
 				<SideBar menuItems={menuItems} />
 			</Col>
-			
+			<Col className="border">
+				<Switch>
+					<Route path="">
+						
+					</Route>
+				</Switch>
+			</Col>
 		</Row>
     </Container>
   );

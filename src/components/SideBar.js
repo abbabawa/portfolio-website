@@ -1,14 +1,14 @@
 import { Nav } from "react-bootstrap"
 
-const SideBar = ()=>{
+const SideBar = (props)=>{
+    let items = props.menuItems
+    let menuItems = []
+    items.forEach(item=>{
+        menuItems.push(<Nav.Link href={item.url}>{item.icon}</Nav.Link>)
+    })
     return (
         <Nav defaultActiveKey="/home" className="flex-column">
-            <Nav.Link href="/home">Active</Nav.Link>
-            <Nav.Link eventKey="link-1">Link</Nav.Link>
-            <Nav.Link eventKey="link-2">Link</Nav.Link>
-            <Nav.Link eventKey="disabled" disabled>
-                Disabled
-            </Nav.Link>
+            {menuItems}
         </Nav>
     )
 }
