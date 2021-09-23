@@ -1,11 +1,13 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css'
 import SideBar from './components/SideBar';
 import { Route, Switch } from 'react-router';
 
 import { FaHome } from 'react-icons/fa';
 import { FcAbout } from 'react-icons/fc';
+import Home from './pages/Home';
 
 function App() {
 
@@ -36,16 +38,16 @@ function App() {
 		}
 	]
   return (
-    <Container fluid className="mx-0 px-0">
+    <Container fluid className="">
 		<Navigation menuItems={menuItems} />
-		<Row>
-			<Col xs="1" className="border text-center d-none">
+		<Row className="">
+			<Col xs="1" className="d-none d-md-block ps-0 pe-4">
 				<SideBar menuItems={menuItems} />
 			</Col>
-			<Col className="border">
+			<Col className="">
 				<Switch>
 					<Route path="">
-						
+						<Home />
 					</Route>
 				</Switch>
 			</Col>

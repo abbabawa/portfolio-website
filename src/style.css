@@ -1,0 +1,14 @@
+#profilePic{
+    width: 250px; 
+    height: 250px
+}
+
+.homeBox{
+    background-image: linear-gradient(to bottom, #f2f2f2, rgba(242, 242, 242, 0));
+}
+
+@media (min-width: 768px) { 
+    .homeBox{
+        background-image: linear-gradient(to right, #f2f2f2, rgba(242, 242, 242, 0));
+    }
+ }
