@@ -1,4 +1,4 @@
-import { Card, Col, Image, Row } from "react-bootstrap"
+import { Col, Image, Row } from "react-bootstrap"
 import profilePic from '../images/profile.jpg'
 
 const Home = ()=>{

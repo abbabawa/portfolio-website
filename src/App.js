@@ -8,6 +8,8 @@ import { Route, Switch } from 'react-router';
 import { FaHome } from 'react-icons/fa';
 import { FcAbout } from 'react-icons/fc';
 import Home from './pages/Home';
+import EducationAndExperience from './pages/EducationAndExperience';
+import ContactMe from './pages/ContactMe';
 
 function App() {
 
@@ -46,8 +48,14 @@ function App() {
 			</Col>
 			<Col className="">
 				<Switch>
-					<Route path="">
+					<Route path="/home">
 						<Home />
+					</Route>
+					<Route path="/education">
+						<EducationAndExperience />
+					</Route>
+					<Route path="/contact">
+						<ContactMe />
 					</Route>
 				</Switch>
 			</Col>
