@@ -7,6 +7,18 @@ import MyCard from "../components/MyCard"
 let data = [
     {
         icon: <MdComputer className="fs-3 text-danger" />,
+        title: <h5 className="my-2">Tech Consultant</h5>,
+        subtitle: "Dannyvet, 2019 - present",
+        text: "Develop and maintain Business Management System. Danny Agric. And Vet. Services Ltd."
+    },
+    {
+        icon: <MdComputer className="fs-3 text-danger" />,
+        title: <h5 className="my-2">Backend Developer</h5>,
+        subtitle: "APLORI, 2019 - 2020",
+        text: "Programmed Backend of organisational website."
+    },
+    {
+        icon: <MdComputer className="fs-3 text-danger" />,
         title: <h5 className="my-2">Instructor</h5>,
         subtitle: "5AM Technologies, 2019-2021",
         text: "Worked as a web design and development Instructor"
@@ -18,7 +30,7 @@ let data = [
         text: "Mandatory one year of national service with the National Youth Service corps (NYSC)"
     },
     {
-        icon: <MdComputer className="fs-3 text-danger" />,
+        icon: <GiGraduateCap className="fs-3 text-danger" />,
         title: <h5 className="my-2">Computer Science</h5>,
         subtitle: "University of Jos, 2012-2017",
         text: "Attended University of Jos and Bagged a bachelor's degree (BSc.)"

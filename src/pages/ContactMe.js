@@ -3,7 +3,7 @@ import { TelephoneFill } from "react-bootstrap-icons"
 import { FaFacebookF, FaLinkedinIn, FaRegCalendar, FaTwitter, FaUserAlt, FaUserGraduate } from "react-icons/fa"
 import { MdLocationOn, MdMail } from "react-icons/md"
 import { Link } from "react-router-dom"
-import profilePic from '../images/profile.jpg'
+import profilePic from '../images/profile_pic.jpg'
 
 const ContactMe = ()=>{
     return (
@@ -41,7 +41,7 @@ const ContactMe = ()=>{
                     </div>
                     <div className="col-md-6 mb-2" md="6">
                         <TelephoneFill className="me-2 text-danger" />
-                        Degree: +234 8133217929
+                        Phone: +234 8133217929
                     </div>
                 </div>
                 <div className="col-4 bg-danger border border-danger mt-3"></div>
@@ -50,7 +50,7 @@ const ContactMe = ()=>{
                         <Link to="https://web.facebook.com/abba.bawa/"><FaFacebookF /></Link>
                     </span>
                     <span className="me-3 bg-white p-2">
-                        <Link to=""><FaLinkedinIn /></Link>
+                        <Link to="https://www.linkedin.com/in/abba-bawa-68265a16a/"><FaLinkedinIn /></Link>
                     </span>
                     <span className="me-3 bg-white p-2">
                         <Link to=""><FaTwitter /></Link>

@@ -1,5 +1,5 @@
 import { Col, Image, Row } from "react-bootstrap"
-import profilePic from '../images/profile.jpg'
+import profilePic from '../images/profile_pic.jpg'
 
 const Home = ()=>{
     return (
