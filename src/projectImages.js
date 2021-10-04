@@ -1,9 +1,9 @@
 
 import ap2 from './images/aplori-resize.png'
-import ap3 from './images/aplori2-resize.png'
+import ap3 from './images/aplori2.png'
 import ap4 from './images/aplori3.png'
 
-import danny1 from './images/dannyvet-resize.png'
+import danny1 from './images/dannyvet.png'
 import danny2 from './images/dannyvet2.png'
 import danny3 from './images/dannyvet3.png'
 import danny4 from './images/dannyvet4.png'
