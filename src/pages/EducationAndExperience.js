@@ -13,9 +13,9 @@ let data = [
     },
     {
         icon: <FaUniversity className="fs-3 text-danger" />,
-        title: <h5 className="my-2">Computer Science</h5>,
-        subtitle: "University of Jos, 2012-2017",
-        text: "Attended University of Jos and Bagged a bachelor's degree"
+        title: <h5 className="my-2">Secondary School</h5>,
+        subtitle: "Air Force Military School Jos, 2012-2017",
+        text: "Senior Secondary School Certificate"
     },
     {
         icon: <GiGraduateCap className="fs-3 text-danger" />,

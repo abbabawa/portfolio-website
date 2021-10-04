@@ -54,7 +54,7 @@ const Project = (props)=>{
     console.log(project)
     return (
         <Row className="mt-5 pt-2">
-            <Col md="11" className="p-2 offset-md- p-5 homeBox" >
+            <Col md="8" className="p-2 offset-md-1 p-5 homeBox" >
                 
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                     {images}
