@@ -6,7 +6,6 @@ import SideBar from './components/SideBar';
 import { Route, Switch } from 'react-router';
 
 import { FaHome, FaUserGraduate } from 'react-icons/fa';
-import { FcAbout } from 'react-icons/fc';
 import Home from './pages/Home';
 import EducationAndExperience from './pages/EducationAndExperience';
 import ContactMe from './pages/ContactMe';
@@ -14,7 +13,6 @@ import WorkHistory from './pages/WorkHistory';
 import Project from './pages/Project';
 import { FolderFill, TelephoneFill } from 'react-bootstrap-icons';
 
-import ap1 from './images/profile.jpg'
 import ap2 from './images/aplori.png'
 import ap3 from './images/aplori2.png'
 import ap4 from './images/aplori3.png'

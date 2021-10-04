@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Carousel, Col, Row } from "react-bootstrap"
 import { useParams } from "react-router";
-import profilePic from '../images/profile.jpg'
 
 const Project = (props)=>{
     const [index, setIndex] = useState(0);
@@ -30,26 +29,26 @@ const Project = (props)=>{
             )
             images.push(hold)
         })
-    useEffect(()=>{
-        project = props.getProject(Number(id))
-        project.screenshots.forEach(shot=>{
-            let hold = (
-                <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={profilePic}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption className="text-dark">
-                            <h3 className="text-danger bg-primary">First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                </Carousel.Item>
-            )
-            //images.push(hold)
-        })
-        console.log(images)
-    }, [])
+    // useEffect(()=>{
+    //     project = props.getProject(Number(id))
+    //     project.screenshots.forEach(shot=>{
+    //         let hold = (
+    //             <Carousel.Item>
+    //                     <img
+    //                     className="d-block w-100"
+    //                     src={profilePic}
+    //                     alt="First slide"
+    //                     />
+    //                     <Carousel.Caption className="text-dark">
+    //                         <h3 className="text-danger bg-primary">First slide label</h3>
+    //                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    //                     </Carousel.Caption>
+    //             </Carousel.Item>
+    //         )
+    //         //images.push(hold)
+    //     })
+    //     console.log(images)
+    // }, [])
     console.log(project)
     return (
         <Row className="mt-5 pt-2">
