@@ -1,5 +1,5 @@
 
-import ap2 from './images/aplori-resize.png'
+import ap2 from './images/aplori.png'
 import ap3 from './images/aplori2.png'
 import ap4 from './images/aplori3.png'
 
