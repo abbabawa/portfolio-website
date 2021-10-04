@@ -1,5 +1,4 @@
 import { Card } from "react-bootstrap"
-import { FaUniversity } from "react-icons/fa"
 
 const MyCard = (props)=>{
     // props = {

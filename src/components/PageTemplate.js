@@ -1,5 +1,4 @@
 import { Col, Row } from "react-bootstrap"
-import MyCard from "../components/MyCard"
 
 const PageTemplate = (props) =>{
     let buttons = []
