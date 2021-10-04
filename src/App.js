@@ -107,7 +107,7 @@ function App() {
 			id: 1,
 			title: 'Home',
 			icon: <FaHome className="fs-4 mb-3" />,
-			url: '/home'
+			url: '/'
 		},
 		{
 			id: 2,
@@ -137,7 +137,7 @@ function App() {
 			</Col>
 			<Col className="">
 				<Switch>
-					<Route path="/home">
+					<Route exact path="/">
 						<Home />
 					</Route>
 					<Route path="/education">
