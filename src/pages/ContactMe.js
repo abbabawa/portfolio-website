@@ -2,6 +2,7 @@ import { Col, Image, Row } from "react-bootstrap"
 import { TelephoneFill } from "react-bootstrap-icons"
 import { FaFacebookF, FaLinkedinIn, FaRegCalendar, FaTwitter, FaUserAlt, FaUserGraduate } from "react-icons/fa"
 import { MdLocationOn, MdMail } from "react-icons/md"
+import { Link } from "react-router-dom"
 import profilePic from '../images/profile.jpg'
 
 const ContactMe = ()=>{
@@ -40,19 +41,19 @@ const ContactMe = ()=>{
                     </div>
                     <div className="col-md-6 mb-2" md="6">
                         <TelephoneFill className="me-2 text-danger" />
-                        Degree: BSc. Computer Science
+                        Degree: +234 8133217929
                     </div>
                 </div>
                 <div className="col-4 bg-danger border border-danger mt-3"></div>
                 <div className="d-flex mt-4">
                     <span className="me-3 bg-white p-2">
-                        <FaFacebookF />
+                        <Link to="https://web.facebook.com/abba.bawa/"><FaFacebookF /></Link>
                     </span>
                     <span className="me-3 bg-white p-2">
-                        <FaLinkedinIn />
+                        <Link to=""><FaLinkedinIn /></Link>
                     </span>
                     <span className="me-3 bg-white p-2">
-                        <FaTwitter />
+                        <Link to=""><FaTwitter /></Link>
                     </span>
                 </div>
                 <div className="mt-4">
