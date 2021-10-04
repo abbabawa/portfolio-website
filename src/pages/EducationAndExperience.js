@@ -26,7 +26,7 @@ let data = [
     {
         icon: <MdComputer className="fs-3 text-danger" />,
         title: <h5 className="my-2">Youth Service</h5>,
-        subtitle: "NYSC, 2019-2021",
+        subtitle: "NYSC, 2017-2018",
         text: "Mandatory one year of national service with the National Youth Service corps (NYSC)"
     },
     {
@@ -44,7 +44,7 @@ let data = [
     {
         icon: <FaUniversity className="fs-3 text-danger" />,
         title: <h5 className="my-2">Secondary School</h5>,
-        subtitle: "Air Force Military School Jos, 2012-2017",
+        subtitle: "Air Force Military School Jos, 2003-2009",
         text: "Senior Secondary School Certificate"
     },
     // {
