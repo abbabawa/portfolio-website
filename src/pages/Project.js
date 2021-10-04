@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Carousel, Col, Row } from "react-bootstrap"
 import { useParams } from "react-router";
 
+import getImages from '../projectImages'
+
 const Project = (props)=>{
     const [index, setIndex] = useState(0);
 
@@ -12,13 +14,13 @@ const Project = (props)=>{
     let images = []
     let {id} = useParams()
     let project
-    project = props.getProject(Number(id))
-        project.screenshots.forEach(shot=>{
+    project = getImages(Number(id))//props.getProject(Number(id))
+        project.forEach(shot=>{
             let hold = (
                 <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={shot.img}
+                        src={shot}
                         alt="First slide"
                         />
                         {/* <Carousel.Caption className="text-dark">
