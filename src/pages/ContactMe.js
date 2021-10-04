@@ -11,12 +11,12 @@ const ContactMe = ()=>{
             <Col md="4" className="p-2 offset-md-1 p-5 homeBox border-danger " >
                 <Image src={profilePic} className="img" id="contact-image" />
             </Col>
-            <Col md="7" className="mt-5">
+            <Col md="6" className="mt-5">
                 <h4>I'm Abba Bawa</h4>
-                <p className="fw-bold">For over 6 years I have been successfully providing business information to people</p>
+                <p className="fw-bold">For over 6 years I have been successfully providing tech services to businesses</p>
                 <p>
                     I am a fullstack web developer. I have designed and developed web applications for several clients,
-                    I am proficient in both frontend (html, css, javascript and reactjs) and backend (php, nodejs) technologies.
+                    <br />I am proficient in both frontend (html, css, javascript and reactjs) and backend (php, nodejs) technologies.
                 </p>
                 <div className="d-md-flex flex-wrap justify-content-between">
                     <div className="col-md-6 mb-2" md="6">

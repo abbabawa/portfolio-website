@@ -7,10 +7,11 @@ const Home = ()=>{
             <Col md="5" className="p-2 offset-md-2 p-5 homeBox" >
                 <div className="">
                         <h6>WELCOME TO ABBA BAWA'S PORTFOLIO</h6>
-                        <h2>DESIGN MAKES ANYTHING <br />WHEN YOU CALL MYSELF</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br /> sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button class="btn btn-danger">Download CV</button>
+                        <h2>EDUCATION, CONTACT AND <br />PORTFOLIO</h2>
+                        <p>Hi, Thanks for visiting my portfolio website. On this site you will find details about my
+                            educational background, qualifications, work experience and portfolio.
+                        </p>
+                        {/* <button class="btn btn-danger">Download CV</button> */}
                  </div>   
             </Col>
             <Col className="pt-4 d-flex">
