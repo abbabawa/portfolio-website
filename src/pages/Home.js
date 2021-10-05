@@ -1,4 +1,5 @@
 import { Col, Image, Row } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import profilePic from '../images/profile_pic.jpg'
 
 const Home = ()=>{
@@ -11,7 +12,9 @@ const Home = ()=>{
                         <p>Hi, Thanks for visiting my portfolio website. On this site you will find details about my
                             educational background, qualifications, work experience and portfolio.
                         </p>
-                        {/* <Link to="" target="_blank" download><button class="btn btn-danger">Download CV</button></Link> */}
+                        <Link to={{pathname: "https://drive.google.com/file/d/12l_-RWMxTDrpOwzKPacjyAysLtg0NTSa/view?usp=sharing"}} target="_blank" download>
+                            <button class="btn btn-danger">Download CV</button>
+                        </Link>
                  </div>   
             </Col>
             <Col className="pt-4 d-flex">

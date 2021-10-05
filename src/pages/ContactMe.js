@@ -57,7 +57,7 @@ const ContactMe = ()=>{
                     </span>
                 </div>
                 <div className="mt-4">
-                    <Link to={"/BAWA_ABBA_RESUME.pdf"} target="_blank" download>
+                    <Link to={{pathname: "https://drive.google.com/file/d/12l_-RWMxTDrpOwzKPacjyAysLtg0NTSa/view?usp=sharing"}} target="_blank" download>
                         <button className="btn btn-danger">
                             Download CV
                         </button>
