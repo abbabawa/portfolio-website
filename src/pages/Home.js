@@ -11,7 +11,7 @@ const Home = ()=>{
                         <p>Hi, Thanks for visiting my portfolio website. On this site you will find details about my
                             educational background, qualifications, work experience and portfolio.
                         </p>
-                        {/* <button class="btn btn-danger">Download CV</button> */}
+                        {/* <Link to="" target="_blank" download><button class="btn btn-danger">Download CV</button></Link> */}
                  </div>   
             </Col>
             <Col className="pt-4 d-flex">

@@ -57,9 +57,11 @@ const ContactMe = ()=>{
                     </span>
                 </div>
                 <div className="mt-4">
-                    <button className="btn btn-danger">
-                        Download CV
-                    </button>
+                    <Link to={"/BAWA_ABBA_RESUME.pdf"} target="_blank" download>
+                        <button className="btn btn-danger">
+                            Download CV
+                        </button>
+                    </Link>
                 </div>
             </Col>
         </Row>

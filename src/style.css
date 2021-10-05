@@ -8,7 +8,7 @@
 }
 
 .card-body:hover{
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #d9534f ;
 }
 
 #contact-image{
