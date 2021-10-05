@@ -7,17 +7,19 @@ const Navigation = (props)=>{
         menuItems.push(<Nav.Link key={item.id} href={item.url} className="fw-bold fs-5">{item.title}</Nav.Link>)
     })
     return (
-        <Navbar bg="white" expand="lg" className="">
-            <Container fluid>
-                {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mx-auto">
-                        {menuItems}
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <div className="row">
+            <Navbar bg="white" expand="lg" className="">
+                <Container fluid>
+                    {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mx-auto">
+                            {menuItems}
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </div>
     )
 }
 

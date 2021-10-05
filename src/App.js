@@ -82,7 +82,7 @@ function App() {
 		}
 	]
   return (
-    <Container fluid className=" p-0">
+    <Container fluid className="">
 		<Navigation menuItems={menuItems} />
 		<Row className="">
 			<Col xs="1" className="d-none d-md-block ps-0 pe-4">

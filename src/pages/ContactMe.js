@@ -47,13 +47,13 @@ const ContactMe = ()=>{
                 <div className="col-4 bg-danger border border-danger mt-3"></div>
                 <div className="d-flex mt-4">
                     <span className="me-3 bg-white p-2">
-                        <Link to="https://web.facebook.com/abba.bawa/"><FaFacebookF /></Link>
+                        <Link to={{pathname: "https://web.facebook.com/abba.bawa/"}} target="_blank" class="text-dark"><FaFacebookF /></Link>
                     </span>
                     <span className="me-3 bg-white p-2">
-                        <Link to="https://www.linkedin.com/in/abba-bawa-68265a16a/"><FaLinkedinIn /></Link>
+                        <Link to={{pathname: "https://www.linkedin.com/in/abba-bawa-68265a16a/"}} target="_blank" class="text-dark"><FaLinkedinIn /></Link>
                     </span>
                     <span className="me-3 bg-white p-2">
-                        <Link to=""><FaTwitter /></Link>
+                        <Link to="" class="text-dark"><FaTwitter /></Link>
                     </span>
                 </div>
                 <div className="mt-4">
