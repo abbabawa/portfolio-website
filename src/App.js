@@ -22,17 +22,34 @@ let data = [
         period: "May 2019 - August 2019",
         screenshots: [
 			
-        ]
+        ],
+		details: [
+			'About Section',
+			'Organisational News',
+			'People section (Staff, students)',
+			'Newsletter',
+			'Library (ability for registered users to access online educational materials',
+			'Admin section to access and update information'
+		]
     },
     {
 		id: 2,
         name: "Sales Management System",
         client: "Danny Agricultural And Veterinary Services Ltd.",
-        url: "aplori.org",
+        url: "dannyvet.com",
         period: "November 2019 - Present",
 		screenshots: [
 			
-        ]
+        ],
+		details: [
+			'Point of sale module',
+			'Inventory management',
+			'Supply management',
+			'Expense (Capital expenses, prepaid expenses etc) tracking',
+			'Reports (Sales, purchases, stock, etc) along with graphs',
+			'Offline desktop client with ability to sync data online',
+			'Multiple branches (branch management)'
+		]
     },
     {
 		id: 3,
@@ -42,7 +59,14 @@ let data = [
         period: "February 2021 - Present",
 		screenshots: [
 			
-        ]
+        ],
+		details: [
+			'Broods (birds) management create, update and delete',
+			'Broods performace tracking i.e. eggs laid per day, manure produced',
+			'Sales management',
+			'Tracking of Expenses',
+			'Reports: Eggs laid, eggs sold, manure produced, feeds purchased'
+		]
     }
 ]
 
