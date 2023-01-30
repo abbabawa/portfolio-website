@@ -7,6 +7,12 @@ import MyCard from "../components/MyCard"
 let data = [
     {
         icon: <MdComputer className="fs-3 text-danger" />,
+        title: <h5 className="my-2">MERN Stack developer</h5>,
+        subtitle: "Punch Agency, 2022 - present",
+        text: "Work with various teams to design and implement performant web applications"
+    },
+    {
+        icon: <MdComputer className="fs-3 text-danger" />,
         title: <h5 className="my-2">Tech Consultant</h5>,
         subtitle: "Dannyvet, 2019 - present",
         text: "Develop and maintain Business Management System. Danny Agric. And Vet. Services Ltd."
