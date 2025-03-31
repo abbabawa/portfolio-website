@@ -2,10 +2,11 @@
 import { ReactElement, useState } from "react";
 import { Carousel, Col, Row } from "react-bootstrap";
 
-import getImages from "../../projectImages";
+import getImages from "@/helpers/projectImages";
 import { IProject } from "@/types/project";
 import { getProject } from "@/helpers/project";
 import CarouselControl from "@/assets/icons/CarouselControl";
+import Image from "next/image";
 
 const Project: React.FC<IProject> = ({ id }) => {
   const [index, setIndex] = useState(0);
@@ -23,14 +24,14 @@ const Project: React.FC<IProject> = ({ id }) => {
   let res = [];
   res.push(
     details?.details?.map((detail) => {
-      return <li>{detail}</li>;
+      return <li key={detail}>{detail}</li>;
     })
   );
   project = getImages(Number(id));
   project.forEach((shot) => {
     let hold = (
       <Carousel.Item key={shot}>
-        <img
+        <Image
           className="d-block mx-auto"
           src={shot}
           alt="First slide"
@@ -39,6 +40,8 @@ const Project: React.FC<IProject> = ({ id }) => {
             display: "flex",
             justifyContent: "center",
           }}
+          width={300}
+          height={300}
         />
       </Carousel.Item>
     );

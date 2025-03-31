@@ -7,7 +7,7 @@ const LandingPage = () => {
     <Row className="mt-5 pt-5">
       <Col md="5" className="p-2 offset-md-2 p-5 homeBox">
         <div className="">
-          <h6>WELCOME TO ABBA BAWA'S PORTFOLIO</h6>
+          <h6>WELCOME TO ABBA BAWA&apos;S PORTFOLIO</h6>
           <h2>
             EDUCATION, CONTACT AND <br />
             PORTFOLIO
@@ -34,6 +34,7 @@ const LandingPage = () => {
           src={profilePic.src}
           className="img  rounded-circle mx-auto me-md-auto ms-md-0"
           id="profilePic"
+          alt="Profile pic"
         />
       </Col>
     </Row>

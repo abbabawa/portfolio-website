@@ -1,5 +1,6 @@
-module.exports = {
-  experimental: {
-    appDir: true, // Ensures Next.js uses the App Router
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "standalone", // Required for deployment on Render
 };
+
+module.exports = nextConfig;
