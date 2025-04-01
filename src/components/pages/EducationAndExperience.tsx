@@ -6,7 +6,7 @@ import PageTemplate from "../PageTemplate";
 import MyCard from "../MyCard";
 import { ReactElement } from "react";
 
-let data = [
+const data = [
   {
     icon: <MdComputer className="fs-3 text-danger" />,
     title: <h5 className="my-2">MERN Stack developer</h5>,
@@ -88,11 +88,11 @@ let data = [
 ];
 
 //let buttons = ["Education", "Experience"]
-let buttons: string[] = [];
+const buttons: string[] = [];
 const EducationAndExperience = () => {
-  let components: ReactElement[] = [];
+  const components: ReactElement[] = [];
   data.forEach((res, index) => {
-    let hold = (
+    const hold = (
       <div className="col-md-4 mt-3" key={index}>
         <MyCard
           title={res.title}

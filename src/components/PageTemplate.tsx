@@ -7,7 +7,7 @@ const PageTemplate: React.FC<IPageTemplate> = ({
   pageTitle,
   components,
 }) => {
-  let buttonElements: ReactElement[] = [];
+  const buttonElements: ReactElement[] = [];
 
   buttons.forEach((res) => {
     buttonElements.push(

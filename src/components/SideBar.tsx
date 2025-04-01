@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const SideBar: React.FC<ISideBar> = ({ menuItems }) => {
   const pathname = usePathname();
-  let items: ReactElement[] = [];
+  const items: ReactElement[] = [];
   menuItems.forEach((item) => {
     items.push(
       <Nav.Link

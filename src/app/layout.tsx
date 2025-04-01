@@ -17,7 +17,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  let menuItems: IMenuItems[] = [
+  const menuItems: IMenuItems[] = [
     {
       id: 1,
       title: "Home",

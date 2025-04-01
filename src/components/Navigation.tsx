@@ -4,8 +4,7 @@ import { INavigation } from "../types/navigation";
 import { usePathname } from "next/navigation";
 const Navigation: React.FC<INavigation> = ({ menuItems }) => {
   const pathname = usePathname();
-  // let items = props.menuItems
-  let items: ReactElement[] = [];
+  const items: ReactElement[] = [];
   menuItems.forEach((item) => {
     console.log(pathname);
     items.push(

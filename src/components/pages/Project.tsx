@@ -6,31 +6,29 @@ import getImages from "../../projectImages";
 import { IProject } from "@/types/project";
 import { getProject } from "@/helpers/project";
 import CarouselControl from "@/assets/icons/CarouselControl";
+import Image from "next/image";
 
 const Project: React.FC<IProject> = ({ id }) => {
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (
-    selectedIndex: number,
-    e: Record<string, unknown> | null
-  ) => {
+  const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
   };
 
-  let images: ReactElement[] = [];
-  let project;
-  let details = getProject(Number(id));
-  let res = [];
+  const images: ReactElement[] = [];
+
+  const details = getProject(Number(id));
+  const res = [];
   res.push(
-    details?.details?.map((detail) => {
-      return <li>{detail}</li>;
+    details?.details?.map((detail, i) => {
+      return <li key={i}>{detail}</li>;
     })
   );
-  project = getImages(Number(id));
+  const project = getImages(Number(id));
   project.forEach((shot) => {
-    let hold = (
+    const hold = (
       <Carousel.Item key={shot}>
-        <img
+        <Image
           className="d-block mx-auto"
           src={shot}
           alt="First slide"
@@ -39,6 +37,8 @@ const Project: React.FC<IProject> = ({ id }) => {
             display: "flex",
             justifyContent: "center",
           }}
+          width={details?.name === "Transit Tracker Mobile App" ? 150 : 700}
+          height={details?.name === "Transit Tracker Mobile App" ? 300 : 400}
         />
       </Carousel.Item>
     );
