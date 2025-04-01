@@ -17,15 +17,10 @@ const ContactMe = () => {
   return (
     <Row className="mt-5 pt-2">
       <Col md="4" className="p-2 offset-md-1 p-5 homeBox border-danger ">
-        <Image
-          src={profilePic.src}
-          className="img"
-          id="contact-image"
-          alt="Profile Picture"
-        />
+        <Image src={profilePic.src} className="img" id="contact-image" />
       </Col>
       <Col className="mt-5">
-        <h4>I&apos;m Abba Bawa</h4>
+        <h4>I'm Abba Bawa</h4>
         <p className="fw-bold">
           For over 8 years, I have been providing tech services to businesses.
         </p>

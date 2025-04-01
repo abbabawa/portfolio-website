@@ -91,9 +91,9 @@ let data = [
 let buttons: string[] = [];
 const EducationAndExperience = () => {
   let components: ReactElement[] = [];
-  data.forEach((res) => {
+  data.forEach((res, index) => {
     let hold = (
-      <div className="col-md-4 mt-3">
+      <div className="col-md-4 mt-3" key={index}>
         <MyCard
           title={res.title}
           icon={res.icon}

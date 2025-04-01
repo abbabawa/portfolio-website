@@ -8,9 +8,9 @@ import { ReactElement } from "react";
 const WorkHistory: React.FC<IWorkHistory> = ({ workHistory }) => {
   let buttons: string[] = [];
   let components: ReactElement[] = [];
-  workHistory.forEach((res) => {
+  workHistory.forEach((res, index) => {
     let hold = (
-      <div className="col-md-6 mt-3">
+      <div className="col-md-6 mt-3" key={index}>
         <Card className="shadow">
           <Card.Header>{res.name}</Card.Header>
           <Card.Body>
